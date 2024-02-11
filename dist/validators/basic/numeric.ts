@@ -4,6 +4,7 @@
  * @returns {boolean}
  */
 export const numeric = (string: string): boolean => {
-    return /^[0-9]+$/.test(string);
-  };
+  if (string === '') return true;
+  return /^[0-9]+$/.test(string);
+};
   

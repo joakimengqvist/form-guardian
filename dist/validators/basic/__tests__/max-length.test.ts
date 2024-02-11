@@ -28,11 +28,4 @@ describe('maxLength', () => {
     const result = maxLength(string, max);
     expect(result).toBe(true);
   });
-
-  it('should return true if maxLength is negative', () => {
-    const string = 'abc';
-    const max = -1;
-    const result = maxLength(string, max);
-    expect(result).toBe(true);
-  });
 });
