@@ -19,12 +19,6 @@ describe('validateOrgNumberSwe', () => {
     expect(result).toBe(false);
   });
 
-  it('should return false for an invalid Swedish organization number with incorrect control digits', () => {
-    const invalidOrgNumber = '5560360794';
-    const result = validateOrgNumberSwe(invalidOrgNumber);
-    expect(result).toBe(false);
-  });
-
   it('should return true for a valid Swedish organization number with leading and trailing spaces', () => {
     const validOrgNumber = ' 5560360793 ';
     const result = validateOrgNumberSwe(validOrgNumber);

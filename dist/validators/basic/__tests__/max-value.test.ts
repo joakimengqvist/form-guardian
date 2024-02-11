@@ -29,10 +29,10 @@ describe('maxValue', () => {
     expect(result).toBe(true);
   });
 
-  it('should return true if max is negative and number is positive', () => {
+  it('should return false if max is negative and number is positive', () => {
     const number = 10;
     const max = -5;
     const result = maxValue(number, max);
-    expect(result).toBe(true);
+    expect(result).toBe(false);
   });
 });
